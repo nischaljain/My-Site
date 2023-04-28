@@ -1,0 +1,68 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Nischal</title>
+  <link rel="stylesheet" href="{%static 'style.css'%}">
+  <link rel="icon" href="{% static 'favicon.ico' %}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="top-container">
+
+    <img class="top-cloud" src="{% static 'cloud.png' %}" alt="">
+    <h1>I'm Nischal.</h1>
+    <h2>Data and Dev.</h2>
+    <p><a href="{% url 'about-nischal-projects'%}">Here are my projects.</a></p>
+    <p><a href="{% url 'blog-home'%}">Back to home</a></p>
+    <img src="cloud.png" alt="" class="bottom-cloud">
+    <img src="mountain.png" alt="">
+  </div>
+
+  <div class="middle-container">
+    <div class="profile">
+      <img src="{% static 'photoProfile.png' %}" alt="" height="150px">
+      <h2>Hello.</h2>
+      <p>I am a third year Computer Science undergrad at MIT, Manipal right now.</p>
+      <p>My interests lie in <span class="underline-text">Dev, Data and Design.</span></p>
+    </div>
+    <br>
+    <hr class="hr-beautify">
+
+    <div class="skills">
+      <h2>My Skills</h2>
+      <br>
+      <div class="skill-row">
+        <img class="web-programming-img" src="{% static 'web-programming.png' %}" alt="">
+        <h3>Web Development</h3>
+        <p>I know my way around HTML, CSS, Javascript, ReactJS, NodeJS.</p>
+      </div>
+      <div class="skill-row">
+        <img class="data-analysis-img" src="{% static 'analysis.png' %}" alt="">
+        <h3>Data Analysis</h3>
+        <p>Python, Pandas, NumPy, Flask.</p>
+      </div>
+    </div>
+
+    <hr class="hr-beautify">
+
+  </div>
+
+
+  <div class="bottom-container">
+    <a class="footer-link" href="https://www.linkedin.com/in/atnischal/">LinkedIn</a>
+    <a class="footer-link" href="https://github.com/nischaljain">Github</a>
+    <p>© Nischal Jain.</p>
+  </div>
+
+
+</body>
+
+</html>

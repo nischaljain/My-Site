@@ -1,0 +1,60 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Projects.</title>
+    <link rel="stylesheet" href="{% static 'projects.css' %}">
+  </head>
+  <body>
+
+  <div class="header-top">
+    <h2>Projects I have worked on.</h2>
+    <a href="{%url 'blog-home' %}">Back to home</a>
+  </div>
+
+
+  <div class="mid-container">
+    <div class="skills">
+      <br>
+      <div class="skill-row">
+        <img class="web-programming-img" src="{% static 'analysis.png' %}" alt="">
+        <a href="https://github.com/nischaljain/CognitiveApplicationsB2/blob/8bc82a1dd3ca73dd355c346299f6d8f8a226e26a/AppRatings.ipynb"><h3>Application Ratings</h3></a>
+        <p>A detailed report on Applications on Play Store, parameters that affect them and profit margins.</p>
+      </div>
+      <div class="skill-row">
+        <img class="data-analysis-img" src="{% static 'linear-regression.png' %}"  alt="">
+        <a href="https://github.com/nischaljain/CognitiveApplicationsB2/blob/8bc82a1dd3ca73dd355c346299f6d8f8a226e26a/Building-a-SVM(2).ipynb"><h3>Support Vector Machine</h3></a>
+        <p>Implemented a Support Vector Machine (SVM) from scratch.</p>
+      </div>
+      <div class="skill-row">
+        <img class="data-analysis-img" src="{% static 'classification.png' %}"  alt="">
+        <a href="https://github.com/nischaljain/CognitiveApplicationsB2/tree/8bc82a1dd3ca73dd355c346299f6d8f8a226e26a/Dog-or-Cat"><h3>Dog-or-Cat Classification</h3></a>
+        <p>Downloaded a dataset containing over 20k images of dogs and cats off of the internet - used a Sequential model and 2D Convolutional Layer to train the model to predict random images.</p>
+      </div>
+      <div class="skill-row">
+        <img class="data-analysis-img" src="{% static 'cluster.png' %}"  alt="">
+        <a href="https://github.com/nischaljain/CognitiveApplicationsB2/blob/8bc82a1dd3ca73dd355c346299f6d8f8a226e26a/MiniProject3/KmeansClustering.ipynb"><h3>K-Means Clustering</h3></a>
+        <p>Downloaded a dataset with information on Income($) & Age - implemented K-Means Clustering Algorithm to form clusters on randomly scattered data. Ambiguities creeped in due to improper scaling of data, had to resolve them before implementing clustering algorithm.</p>
+      </div>
+      <div class="skill-row">
+        <img class="data-analysis-img" src="{% static 'linear-regression.png' %}"  alt="">
+        <a href="https://github.com/nischaljain/CognitiveApplicationsB2/blob/8bc82a1dd3ca73dd355c346299f6d8f8a226e26a/MiniProject1.py"><h3>Linear Regression Model</h3></a>
+        <p>Trained a simple Linear Regeression model to predict Salaries based on Experience of the employees - downloaded the dataset off of internet.</p>
+      </div>
+      <div class="skill-row-bottommost">
+        <img class="data-analysis-img" src="{% static 'coding.png' %}"  alt="">
+        <a href="https://github.com/nischaljain/miniterminal/blob/main/minishell.c"><h3>Mini Terminal</h3></a>
+        <p>A rudimentary version of the linux shell implemented in C; using Operating System concepts like Forking, System Calls, File/Directory Management and more.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-container">
+    <a class="footer-link" href="https://www.linkedin.com/in/atnischal/">LinkedIn</a>
+    <a class="footer-link" href="https://github.com/nischaljain">Github</a>
+    <p>© Nischal Jain.</p>
+  </div>
+
+  </body>
+</html>
